@@ -22,7 +22,8 @@ defmodule EpgsqlEx.MixProject do
   defp deps do
     [
       {:epgsql, "~> 4.2.1"},
-      {:db_connection, "~> 2.0.6"}
+      {:db_connection, "~> 2.0.6"},
+      {:ecto_sql, "~> 3.0.5"}
     ]
   end
 end

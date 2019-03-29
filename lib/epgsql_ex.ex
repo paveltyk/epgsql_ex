@@ -1,18 +1,12 @@
 defmodule EpgsqlEx do
-  @moduledoc """
-  Documentation for EpgsqlEx.
-  """
+  alias EpgsqlEx.Query
 
-  @doc """
-  Hello world.
+  def child_spec(opts) do
+    DBConnection.child_spec(EpgsqlEx.Protocol, opts)
+  end
 
-  ## Examples
-
-      iex> EpgsqlEx.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def execute(conn, query, params, opts) do
+    query = %Query{statement: query}
+    DBConnection.prepare_execute(conn, query, params, opts)
   end
 end
