@@ -21,7 +21,8 @@ defmodule EpgsqlEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:epgsql, "~> 4.2.1"}
+      {:epgsql, "~> 4.2.1"},
+      {:db_connection, "~> 2.0.6"}
     ]
   end
 end

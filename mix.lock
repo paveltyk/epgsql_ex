@@ -1,3 +1,5 @@
 %{
+  "connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], [], "hexpm"},
+  "db_connection": {:hex, :db_connection, "2.0.6", "bde2f85d047969c5b5800cb8f4b3ed6316c8cb11487afedac4aa5f93fd39abfa", [:mix], [{:connection, "~> 1.0.2", [hex: :connection, repo: "hexpm", optional: false]}], "hexpm"},
   "epgsql": {:hex, :epgsql, "4.2.1", "5b8a6c4ea3ae981e946798be388d29434b0ac857e8b4b1e4ccb9ed726345d54b", [:rebar3], [], "hexpm"},
 }
